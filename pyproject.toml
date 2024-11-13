@@ -4,6 +4,9 @@ version = "0.1.1"
 description = "Put tqdm on your menu bar."
 readme = "README.md"
 requires-python = ">=3.12"
+authors = [
+    { name="Ooj" }
+]
 dependencies = [
     "rumps>=0.4.0",
     "tqdm>=4.67.0",
@@ -11,4 +14,5 @@ dependencies = [
 [tool.uv]
 dev-dependencies = [
   "fonttools",
+  "pytest",
 ]
