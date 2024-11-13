@@ -10,6 +10,7 @@ authors = [
 keywords = ["progress", "progressbar", "menubar", "tqdm", "macos"]
 classifiers = [
     "Environment :: MacOS X",
+    "Operating System :: MacOS",
     "Programming Language :: Python :: 3.12",
     "Intended Audience :: Developers",
     "Intended Audience :: Education",
@@ -17,7 +18,7 @@ classifiers = [
 ]
 dependencies = [
     "rumps>=0.4.0",
-    "tqdm>=4.67.0",
+    "tqdm>=4.67.0"
 ]
 [tool.uv]
 dev-dependencies = [
@@ -26,3 +27,4 @@ dev-dependencies = [
 ]
 [project.urls]
 homepage = "https://github.com/0oj/mtqdm"
+repository = "https://github.com/0oj/mtqdm"
