@@ -1,8 +1,8 @@
 [project]
 name = "mtqdm"
-version = "0.1.1"
+version = "0.1.2"
 description = "Put tqdm on your menu bar."
-readme = "README.md"
+readme = {file = "README.md", content-type = "text/markdown"}
 requires-python = ">=3.12"
 authors = [
     { name="Ooj" }
