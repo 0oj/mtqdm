@@ -170,7 +170,7 @@ class mtqdm(tqdm):
             'elapsed': elapsed_str,
             'remaining': remaining_str,
             'rate': self.format_dict.get('rate', None),
-            'current_mode': self.display_mode
+            'current_mode': self.display_mode.value
         }
         self._queue.put(metrics)
 
@@ -214,12 +214,12 @@ class mtqdm(tqdm):
         while not self._queue.empty():
             msg = self._queue.get()
             if isinstance(msg, tuple) and msg[0] == "MODE":
-                self.display_mode = msg[1]
+                self.display_mode = self.DisplayMode(msg[1])
         self.update_menu_bar()
 
     def handle_mode_change(self, new_mode):
         """Handle mode change requests from the menu."""
-        self.display_mode = new_mode
+        self.display_mode = self.DisplayMode(new_mode)
         self.update_menu_bar()
 
     def close(self):
