@@ -1,7 +1,7 @@
 [project]
-name = "tqdm-menu-bar"
+name = "mtqdm"
 version = "0.1.0"
-description = "Add your description here"
+description = "Put tqdm on your menu bar."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [

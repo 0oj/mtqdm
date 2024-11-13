@@ -34,6 +34,29 @@ wheels = [
 ]
 
 [[package]]
+name = "mtqdm"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "rumps" },
+    { name = "tqdm" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "fonttools" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "rumps", specifier = ">=0.4.0" },
+    { name = "tqdm", specifier = ">=4.67.0" },
+]
+
+[package.metadata.requires-dev]
+dev = [{ name = "fonttools" }]
+
+[[package]]
 name = "pyobjc-core"
 version = "10.3.1"
 source = { registry = "https://pypi.org/simple" }
@@ -76,26 +99,3 @@ sdist = { url = "https://files.pythonhosted.org/packages/e8/4f/0153c21dc5779a49a
 wheels = [
     { url = "https://files.pythonhosted.org/packages/2b/78/57043611a16c655c8350b4c01b8d6abfb38cc2acb475238b62c2146186d7/tqdm-4.67.0-py3-none-any.whl", hash = "sha256:0cd8af9d56911acab92182e88d763100d4788bdf421d251616040cc4d44863be", size = 78590 },
 ]
-
-[[package]]
-name = "tqdm-menu-bar"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "rumps" },
-    { name = "tqdm" },
-]
-
-[package.dev-dependencies]
-dev = [
-    { name = "fonttools" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "rumps", specifier = ">=0.4.0" },
-    { name = "tqdm", specifier = ">=4.67.0" },
-]
-
-[package.metadata.requires-dev]
-dev = [{ name = "fonttools" }]
