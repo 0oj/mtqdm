@@ -17,7 +17,7 @@ for _ in mtqdm(range(100)):
     # ...
 ```
 
-![mtqdm-0.1.2 in action](examples/basic_usage.png)
+![mtqdm-0.1.2 in action](https://github.com/0oj/mtqdm/blob/main/examples/basic_usage.png?raw=true)
 
 The progress bar from **tqdm** will still be displayed in the terminal. Additionally, a progress bar like the one above will appear in the menu bar. Clicking it will reveal metrics.
 
